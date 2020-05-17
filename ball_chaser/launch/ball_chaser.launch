@@ -2,6 +2,6 @@
 
   <node name="drive_bot" type="drive_bot" pkg="ball_chaser" output="screen">
   </node>
-	<node name="processes_image" type="process_image" pkg="ball_chaser" output="screen">
+  <node name="processes_image" type="process_image" pkg="ball_chaser" output="screen">
   </node>
 </launch>

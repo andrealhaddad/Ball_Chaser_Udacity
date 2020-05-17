@@ -26,7 +26,7 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request& req, ball_chaser:
 
 	res.msg_feedback= "Linear: "+ std::to_string(req.linear_x) + "  angl: "+ std::to_string(req.angular_z);
 	//res.msg_feedback = "Done";	
-	ROS_INFO_STREAM(res.msg_feedback);
+	//ROS_INFO_STREAM(res.msg_feedback);
 	return true;
 }
 
