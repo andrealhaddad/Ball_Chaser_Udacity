@@ -170,20 +170,20 @@ void process_image_callback(const sensor_msgs::Image img)
         if (CM < Im_cent1){
             ss = "CM = "+ to_string(CM) + "  ball to the left";
             set_vel_x = 0.0;
-            set_ang_z = 0.2;
+            set_ang_z = 0.15;
             Stuck_flag = drive_robot(set_vel_x, set_ang_z);
         }
         else if(CM > Im_cent2){
             ss = "CM = "+ to_string(CM) + "  Ball to the right";
             set_vel_x = 0.0;
-            set_ang_z = -0.2;
+            set_ang_z = -0.15;
             Stuck_flag = drive_robot(set_vel_x, set_ang_z);
 
         }
         else{
             f = hit_ball(bin_x);
             if (f == false){
-                vel_str = 0.4;
+                vel_str = 0.25;
                 if ( width  > 200){vel_str = 1.0*(20.0/width);}
                 set_vel_x = vel_str;
                 set_ang_z = 0.0;

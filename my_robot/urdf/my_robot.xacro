@@ -80,7 +80,6 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
-			<material name="black"/>
     </visual>
 
 
@@ -235,4 +234,16 @@
 
   </link>
 
+	<gazebo reference="left_wheel">
+		<material>Gazebo/Red</material>
+	</gazebo>
+	<gazebo reference="right_wheel">
+		<material>Gazebo/Red</material>
+	</gazebo>
+	<gazebo reference="chassis">
+		<material>Gazebo/Black</material>
+	</gazebo>
+
 </robot>
+
+
